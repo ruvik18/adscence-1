@@ -106,14 +106,13 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
-      </head>
-      <body className="bg-background text-foreground antialiased">
-        <Script
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2248107845037339"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
         />
+      </head>
+      <body className="bg-background text-foreground antialiased">
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-SRXTDQ20HK"
