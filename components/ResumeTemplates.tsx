@@ -99,12 +99,12 @@ const sample: TemplateProps["data"] = {
   ],
 };
 
-const p = sample;
+
 
 // ─────────────────────────────────────────────────────────────────────────────
 // TEMPLATE 1 — Blackout Editorial (dark, oversized RESUME watermark)
 // ─────────────────────────────────────────────────────────────────────────────
-function T1() {
+function T1({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#111111] text-white relative overflow-hidden"
@@ -250,7 +250,7 @@ function T1() {
 // ─────────────────────────────────────────────────────────────────────────────
 // TEMPLATE 2 — Cream Editorial (like inspiration image 1)
 // ─────────────────────────────────────────────────────────────────────────────
-function T2() {
+function T2({ data: p }: TemplateProps) {
   const nameParts = p.personalInfo.fullName.split(" ");
   const firstName = nameParts[0] || "";
   const lastName = nameParts.slice(1).join(" ") || "";
@@ -418,7 +418,7 @@ function T2() {
 // ─────────────────────────────────────────────────────────────────────────────
 // TEMPLATE 3 — Pure White Serif Power
 // ─────────────────────────────────────────────────────────────────────────────
-function T3() {
+function T3({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-white text-[#111] overflow-hidden"
@@ -622,7 +622,7 @@ function T3() {
 // ─────────────────────────────────────────────────────────────────────────────
 // TEMPLATE 4 — Charcoal Swiss Grid
 // ─────────────────────────────────────────────────────────────────────────────
-function T4() {
+function T4({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#1c1c1c] text-white overflow-hidden"
@@ -825,7 +825,7 @@ function T4() {
 // ─────────────────────────────────────────────────────────────────────────────
 // TEMPLATE 5 — Neon Green Terminal
 // ─────────────────────────────────────────────────────────────────────────────
-function T5() {
+function T5({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#0a0a0a] text-white overflow-hidden"
@@ -1028,7 +1028,7 @@ function T5() {
 // ─────────────────────────────────────────────────────────────────────────────
 // TEMPLATE 6 — Warm Ivory Split
 // ─────────────────────────────────────────────────────────────────────────────
-function T6() {
+function T6({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full overflow-hidden"
@@ -1249,7 +1249,7 @@ function T6() {
 // ─────────────────────────────────────────────────────────────────────────────
 // TEMPLATE 7 — Cobalt Blue Magazine
 // ─────────────────────────────────────────────────────────────────────────────
-function T7() {
+function T7({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#0a1628] text-white overflow-hidden"
@@ -1464,7 +1464,7 @@ function T7() {
 // ─────────────────────────────────────────────────────────────────────────────
 // TEMPLATE 8 — Sand + Ink Newspaper
 // ─────────────────────────────────────────────────────────────────────────────
-function T8() {
+function T8({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#faf7f2] text-[#1a1a1a] overflow-hidden"
@@ -1697,7 +1697,7 @@ function T8() {
 // ─────────────────────────────────────────────────────────────────────────────
 // TEMPLATE 9 — Pure Black Power
 // ─────────────────────────────────────────────────────────────────────────────
-function T9() {
+function T9({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-black text-white overflow-hidden relative"
@@ -1879,7 +1879,7 @@ function T9() {
 // ─────────────────────────────────────────────────────────────────────────────
 // TEMPLATE 10 — Crimson Statement
 // ─────────────────────────────────────────────────────────────────────────────
-function T10() {
+function T10({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#f8f4ef] overflow-hidden"
@@ -2101,7 +2101,7 @@ function T10() {
 // ─────────────────────────────────────────────────────────────────────────────
 // TEMPLATE 11 — Slate + Ochre Architect
 // ─────────────────────────────────────────────────────────────────────────────
-function T11() {
+function T11({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#f2ede8] overflow-hidden"
@@ -2294,7 +2294,7 @@ function T11() {
 // ─────────────────────────────────────────────────────────────────────────────
 // TEMPLATE 12 — Bordeaux Vertical
 // ─────────────────────────────────────────────────────────────────────────────
-function T12() {
+function T12({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-white overflow-hidden"
@@ -2529,7 +2529,7 @@ function T12() {
 // ─────────────────────────────────────────────────────────────────────────────
 // TEMPLATE 13 — Forest Green Architectural
 // ─────────────────────────────────────────────────────────────────────────────
-function T13() {
+function T13({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#f4f7f4] overflow-hidden"
@@ -2744,7 +2744,7 @@ function T13() {
 // ─────────────────────────────────────────────────────────────────────────────
 // TEMPLATE 14 — Ultra Minimal Hairline
 // ─────────────────────────────────────────────────────────────────────────────
-function T14() {
+function T14({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-white text-[#111] overflow-hidden"
@@ -2928,7 +2928,7 @@ function T14() {
 // ─────────────────────────────────────────────────────────────────────────────
 // TEMPLATE 15 — Bold Italic Fashion
 // ─────────────────────────────────────────────────────────────────────────────
-function T15() {
+function T15({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#0d0d0d] text-white overflow-hidden relative"
@@ -3110,7 +3110,7 @@ function T15() {
 // TEMPLATES 16-25: Bold color blocks, marketing, finance
 // ─────────────────────────────────────────────────────────────────────────────
 
-function T16() {
+function T16({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#ff3b00] text-white overflow-hidden"
@@ -3290,7 +3290,7 @@ function T16() {
   );
 }
 
-function T17() {
+function T17({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#f5f0e8] overflow-hidden"
@@ -3461,7 +3461,7 @@ function T17() {
   );
 }
 
-function T18() {
+function T18({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-white overflow-hidden"
@@ -3679,7 +3679,7 @@ function T18() {
   );
 }
 
-function T19() {
+function T19({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#0f0f23] text-white overflow-hidden"
@@ -3869,7 +3869,7 @@ function T19() {
   );
 }
 
-function T20() {
+function T20({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#fdf9f3] overflow-hidden"
@@ -4079,7 +4079,7 @@ function T20() {
   );
 }
 
-function T21() {
+function T21({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#0c1520] text-white overflow-hidden"
@@ -4269,7 +4269,7 @@ function T21() {
   );
 }
 
-function T22() {
+function T22({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#f7f4f0] overflow-hidden"
@@ -4504,7 +4504,7 @@ function T22() {
   );
 }
 
-function T23() {
+function T23({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#e8f0ff] overflow-hidden"
@@ -4701,7 +4701,7 @@ function T23() {
   );
 }
 
-function T24() {
+function T24({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-white overflow-hidden"
@@ -4897,7 +4897,7 @@ function T24() {
   );
 }
 
-function T25() {
+function T25({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#06111f] text-white overflow-hidden"
@@ -5368,7 +5368,7 @@ const cleanTemplate = (
   </div>
 );
 
-function T26() {
+function T26({ data: p }: TemplateProps) {
   return cleanTemplate(
     "#0d9488",
     "#f0fdfa",
@@ -5377,10 +5377,10 @@ function T26() {
     "Healthcare",
   );
 }
-function T27() {
+function T27({ data: p }: TemplateProps) {
   return cleanTemplate("#2563eb", "#f0f6ff", "#1e3a5f", "#e0eeff", "Medicine");
 }
-function T28() {
+function T28({ data: p }: TemplateProps) {
   return cleanTemplate(
     "#65a30d",
     "#f7faf5",
@@ -5389,25 +5389,25 @@ function T28() {
     "Health Sciences",
   );
 }
-function T29() {
+function T29({ data: p }: TemplateProps) {
   return cleanTemplate("#3b82f6", "#f8fafc", "#1e3a5f", "#f0f5ff", "Clinical");
 }
-function T30() {
+function T30({ data: p }: TemplateProps) {
   return cleanTemplate("#0891b2", "#f0f9ff", "#0c3a4a", "#e0f5ff", "Medical");
 }
-function T31() {
+function T31({ data: p }: TemplateProps) {
   return cleanTemplate("#7c3aed", "#faf5ff", "#3b0764", "#f0e8ff", "Law");
 }
-function T32() {
+function T32({ data: p }: TemplateProps) {
   return cleanTemplate("#1d4ed8", "#f0f4ff", "#0f1f5f", "#e8eeff", "Legal");
 }
-function T33() {
+function T33({ data: p }: TemplateProps) {
   return cleanTemplate("#b45309", "#fffbeb", "#4a2000", "#fff8e8", "Counsel");
 }
-function T34() {
+function T34({ data: p }: TemplateProps) {
   return cleanTemplate("#0f766e", "#f0fdfa", "#0a3530", "#e0f5f2", "Practice");
 }
-function T35() {
+function T35({ data: p }: TemplateProps) {
   return cleanTemplate("#be185d", "#fff1f8", "#5f0030", "#ffe8f5", "Attorney");
 }
 
@@ -5415,7 +5415,7 @@ function T35() {
 // TEMPLATES 36-40: Bold editorial academia + sales
 // ─────────────────────────────────────────────────────────────────────────────
 
-function T36() {
+function T36({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#fffef9] overflow-hidden"
@@ -5639,7 +5639,7 @@ function T36() {
   );
 }
 
-function T37() {
+function T37({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#1e1e2e] text-white overflow-hidden"
@@ -5810,7 +5810,7 @@ function T37() {
   );
 }
 
-function T38() {
+function T38({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#f8f8f8] overflow-hidden"
@@ -6007,7 +6007,7 @@ function T38() {
   );
 }
 
-function T39() {
+function T39({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#0a1f2e] text-white overflow-hidden"
@@ -6192,7 +6192,7 @@ function T39() {
   );
 }
 
-function T40() {
+function T40({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#faf0ff] overflow-hidden"
@@ -6404,7 +6404,7 @@ function T40() {
 // TEMPLATES 41-50: Executive + Entry level
 // ─────────────────────────────────────────────────────────────────────────────
 
-function T41() {
+function T41({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#0a0a0a] text-white overflow-hidden relative"
@@ -6591,7 +6591,7 @@ function T41() {
   );
 }
 
-function T42() {
+function T42({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#f0ece4] overflow-hidden"
@@ -6816,7 +6816,7 @@ function T42() {
   );
 }
 
-function T43() {
+function T43({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-white overflow-hidden"
@@ -7007,7 +7007,7 @@ function T43() {
   );
 }
 
-function T44() {
+function T44({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#0f1623] text-white overflow-hidden"
@@ -7203,7 +7203,7 @@ function T44() {
   );
 }
 
-function T45() {
+function T45({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#fdfaf5] overflow-hidden"
@@ -7410,7 +7410,7 @@ function T45() {
 }
 
 // Entry templates 46-50
-function T46() {
+function T46({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#111] text-white overflow-hidden"
@@ -7594,7 +7594,7 @@ function T46() {
   );
 }
 
-function T47() {
+function T47({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#fef9f3] overflow-hidden"
@@ -7818,7 +7818,7 @@ function T47() {
   );
 }
 
-function T48() {
+function T48({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-white overflow-hidden"
@@ -7992,7 +7992,7 @@ function T48() {
   );
 }
 
-function T49() {
+function T49({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#f5ede0] overflow-hidden"
@@ -8221,7 +8221,7 @@ function T49() {
   );
 }
 
-function T50() {
+function T50({ data: p }: TemplateProps) {
   return (
     <div
       className="min-h-full bg-[#f5f5f5] overflow-hidden"
@@ -8570,7 +8570,7 @@ export default function ResumeGallery() {
                     height: "154%",
                   }}
                 >
-                  <Comp />
+                  <Comp data={sample} />
                 </div>
               </div>
             </div>
