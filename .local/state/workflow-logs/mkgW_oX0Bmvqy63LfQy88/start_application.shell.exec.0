@@ -1,0 +1,20 @@
+
+> resume-inspire@1.0.0 dev
+> next dev -p 5000 -H 0.0.0.0
+
+[1G[0K   [1m[38;2;173;127;168m▲ Next.js 15.5.18[39m[22m
+   - Local:        http://localhost:5000
+   - Network:      http://0.0.0.0:5000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 1615ms
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 6.2s (1342 modules)
+ GET / [32m200[39m in 8176ms
+ [32m[1m✓[22m[39m Compiled in 987ms (600 modules)
+ GET / [32m200[39m in 9209ms
+ [33m[1m⚠[22m[39m Cross origin request detected from 757003dd-0790-42ac-9fa4-ccaf88a2b523-00-k3i3n6cm3rdm.sisko.replit.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ [37m[1m○[22m[39m Compiling /resumes ...
+ [32m[1m✓[22m[39m Compiled /resumes in 1094ms (1333 modules)
+ GET /resumes [32m200[39m in 2200ms

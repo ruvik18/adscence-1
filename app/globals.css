@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Mazius Display";
+  src: url("/fonts/MaziusDisplay-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mazius Display";
+  src: url("/fonts/MaziusDisplay-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mazius Display";
+  src: url("/fonts/MaziusDisplay-Extraitalic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+html {
+  background-color: #f1f1f1;
+  color: #050505;
+}
+
+body {
+  font-family: var(--font-manrope), Arial, sans-serif;
+  background-color: #f1f1f1;
+  color: #050505;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-display {
+  font-family: "Mazius Display", Georgia, serif;
+}
+
+.font-display-italic {
+  font-family: "Mazius Display", Georgia, serif;
+  font-style: italic;
+}
+
+.font-display-extraitalic {
+  font-family: "Mazius Display", Georgia, serif;
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* Prose overrides for blog posts */
+.prose {
+  color: #050505;
+  max-width: none;
+}
+
+.prose h2 {
+  font-family: "Mazius Display", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #050505;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.prose h3 {
+  font-family: var(--font-manrope), Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #050505;
+  margin-top: 2rem;
+}
+
+.prose p {
+  font-family: var(--font-manrope), Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: #1e2022;
+  margin-bottom: 1.5rem;
+}
+
+.prose strong {
+  font-weight: 600;
+  color: #050505;
+}
+
+.prose ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.prose ul li {
+  padding-left: 1.25rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: #1e2022;
+}
+
+.prose ul li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #8b8b8b;
+}
+
+.prose ol {
+  padding-left: 1.5rem;
+}
+
+.prose ol li {
+  margin-bottom: 0.5rem;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: #1e2022;
+}
+
+/* Selection */
+::selection {
+  background-color: #050505;
+  color: #f1f1f1;
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
