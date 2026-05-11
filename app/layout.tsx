@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 
@@ -67,6 +68,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "DmkcUwfILknIo02EbJ5_fEK1CaslBidEiTOd3XoLD8s",
+  },
 };
 
 const websiteJsonLd = {
@@ -104,6 +108,26 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-background text-foreground antialiased">
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2248107845037339"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-SRXTDQ20HK"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-SRXTDQ20HK');
+          `}
+        </Script>
         {children}
       </body>
     </html>

@@ -1,3 +1,4 @@
+import React from "react";
 // ============================================================================
 // 50 PREMIUM RESUME TEMPLATES — EDITORIAL REDESIGN
 // Fashion-Forward Typography • Bold Color Palettes • Dramatic Layouts
@@ -5103,6 +5104,7 @@ function T25({ data: p }: TemplateProps) {
 // ─────────────────────────────────────────────────────────────────────────────
 
 const cleanTemplate = (
+  p: any,
   accent: string,
   bg: string,
   textColor: string,
@@ -5369,7 +5371,7 @@ const cleanTemplate = (
 );
 
 function T26({ data: p }: TemplateProps) {
-  return cleanTemplate(
+  return cleanTemplate(p, 
     "#0d9488",
     "#f0fdfa",
     "#0f4f4a",
@@ -5378,10 +5380,10 @@ function T26({ data: p }: TemplateProps) {
   );
 }
 function T27({ data: p }: TemplateProps) {
-  return cleanTemplate("#2563eb", "#f0f6ff", "#1e3a5f", "#e0eeff", "Medicine");
+  return cleanTemplate(p, "#2563eb", "#f0f6ff", "#1e3a5f", "#e0eeff", "Medicine");
 }
 function T28({ data: p }: TemplateProps) {
-  return cleanTemplate(
+  return cleanTemplate(p, 
     "#65a30d",
     "#f7faf5",
     "#2a4a0a",
@@ -5390,25 +5392,25 @@ function T28({ data: p }: TemplateProps) {
   );
 }
 function T29({ data: p }: TemplateProps) {
-  return cleanTemplate("#3b82f6", "#f8fafc", "#1e3a5f", "#f0f5ff", "Clinical");
+  return cleanTemplate(p, "#3b82f6", "#f8fafc", "#1e3a5f", "#f0f5ff", "Clinical");
 }
 function T30({ data: p }: TemplateProps) {
-  return cleanTemplate("#0891b2", "#f0f9ff", "#0c3a4a", "#e0f5ff", "Medical");
+  return cleanTemplate(p, "#0891b2", "#f0f9ff", "#0c3a4a", "#e0f5ff", "Medical");
 }
 function T31({ data: p }: TemplateProps) {
-  return cleanTemplate("#7c3aed", "#faf5ff", "#3b0764", "#f0e8ff", "Law");
+  return cleanTemplate(p, "#7c3aed", "#faf5ff", "#3b0764", "#f0e8ff", "Law");
 }
 function T32({ data: p }: TemplateProps) {
-  return cleanTemplate("#1d4ed8", "#f0f4ff", "#0f1f5f", "#e8eeff", "Legal");
+  return cleanTemplate(p, "#1d4ed8", "#f0f4ff", "#0f1f5f", "#e8eeff", "Legal");
 }
 function T33({ data: p }: TemplateProps) {
-  return cleanTemplate("#b45309", "#fffbeb", "#4a2000", "#fff8e8", "Counsel");
+  return cleanTemplate(p, "#b45309", "#fffbeb", "#4a2000", "#fff8e8", "Counsel");
 }
 function T34({ data: p }: TemplateProps) {
-  return cleanTemplate("#0f766e", "#f0fdfa", "#0a3530", "#e0f5f2", "Practice");
+  return cleanTemplate(p, "#0f766e", "#f0fdfa", "#0a3530", "#e0f5f2", "Practice");
 }
 function T35({ data: p }: TemplateProps) {
-  return cleanTemplate("#be185d", "#fff1f8", "#5f0030", "#ffe8f5", "Attorney");
+  return cleanTemplate(p, "#be185d", "#fff1f8", "#5f0030", "#ffe8f5", "Attorney");
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
