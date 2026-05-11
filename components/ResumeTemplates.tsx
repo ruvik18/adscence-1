@@ -1,4 +1,5 @@
 import React from "react";
+import { ResumeData } from "@/data/builder-templates";
 // ============================================================================
 // 50 PREMIUM RESUME TEMPLATES — EDITORIAL REDESIGN
 // Fashion-Forward Typography • Bold Color Palettes • Dramatic Layouts
@@ -6,32 +7,7 @@ import React from "react";
 // ============================================================================
 
 export interface TemplateProps {
-  data: {
-    personalInfo: {
-      fullName: string;
-      jobTitle: string;
-      email: string;
-      phone: string;
-      location?: string;
-      website?: string;
-      birthDate?: string;
-      photo?: string;
-    };
-    summary: string;
-    education: Array<{
-      id: string;
-      school: string;
-      degree: string;
-      period: string;
-    }>;
-    experience: Array<{
-      id: string;
-      position: string;
-      period: string;
-      highlights: string[];
-    }>;
-    skills: string[];
-  };
+  data: ResumeData;
 }
 
 const sample: TemplateProps["data"] = {
@@ -64,7 +40,9 @@ const sample: TemplateProps["data"] = {
     {
       id: "1",
       position: "Creative Director",
+      company: "Studio Co",
       period: "2021 — Present",
+      location: "New York, NY",
       highlights: [
         "Led brand identity for 12 Fortune 500 clients globally",
         "Built and managed a design team of 8 across 3 continents",
@@ -74,7 +52,9 @@ const sample: TemplateProps["data"] = {
     {
       id: "2",
       position: "Senior Designer",
+      company: "Avenue Agency",
       period: "2018 — 2021",
+      location: "New York, NY",
       highlights: [
         "Art directed campaigns reaching 50M+ impressions across digital and print",
         "Designed award-winning packaging for luxury consumer goods sector",
@@ -83,7 +63,9 @@ const sample: TemplateProps["data"] = {
     {
       id: "3",
       position: "Designer",
+      company: "Freelance",
       period: "2016 — 2018",
+      location: "New York, NY",
       highlights: [
         "Produced visual systems for 20+ brand identities from concept to launch",
       ],
@@ -5104,7 +5086,7 @@ function T25({ data: p }: TemplateProps) {
 // ─────────────────────────────────────────────────────────────────────────────
 
 const cleanTemplate = (
-  p: any,
+  p: ResumeData,
   accent: string,
   bg: string,
   textColor: string,
